@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/ada.png" type="">
+
+  <title> ADA GAYRİMENKUL </title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <!-- nice select  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css"
+    integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ=="
+    crossorigin="anonymous" />
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+</head>
+
+<body class="sub_page">
+
+  <div class="hero_area">
+    <div class="bg-box">
+      <img src="images/hero_bg.jpg" alt="">
+    </div>
+
+
+
+
+    <!-- HEADER KISMI BAŞLANGIC -->
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/ada.png" alt="" style="width: 36px; height: 36px; border-radius: 8px;">
+          </a>
+
+
+
+
+
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  mx-auto ">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">ANA SAYFA </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="menu.html">PORTFÖY</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">HAKKIMIZDA</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="book.html">İLETİŞİM <span class="sr-only">(current)</span> </a>
+              </li>
+            </ul>
+
+
+            <form class="form-inline"> <!--SOSYAL MEDYA LİNKLERİ-->
+
+              <button class="btn my-2 my-sm-0 nav_search-btn" type="button"
+                onclick="window.open('https://www.youtube.com/@serhatyardimciemlak', '_blank')"><i
+                  class="fa fa-youtube-play" aria-hidden="true"></i>
+              </button>
+
+              <button class="btn my-2 my-sm-0 nav_search-btn" type="button"
+                onclick="window.open('https://www.instagram.com/adagayrimenkuldidim/', '_blank')">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </button>
+              <button class="btn my-2 my-sm-0 nav_search-btn" type="button"
+                onclick="window.open('https://www.facebook.com/profile.php?id=61564876332903', '_blank')">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </button>
+              <button class="btn my-2 my-sm-0 nav_search-btn" type="button"
+                onclick="window.open('https://wa.me/905353882044', '_blank')">
+
+                <i class="fa fa-whatsapp" aria-hidden="true"></i>
+              </button>
+
+              <button class="btn my-2 my-sm-0 nav_search-btn" type="button"
+                onclick="window.open(' https://didimadagayrimenkul.sahibinden.com/', '_blank')"
+                style="font-size: 20px; font-weight: bold;">
+                S
+              </button>
+            </form>
+
+
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- HEADER KISMI BİTİŞ -->
+
+
+
+  </div>
+
+  <!-- book section -->
+  <section class="book_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>Masa Ayırın</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form_container">
+            <form id="reservationForm" onsubmit="sendMessage(event)">
+              <div>
+                <input type="text" class="form-control" placeholder="Adınız" required />
+              </div>
+              <div>
+                <input type="text" class="form-control" placeholder="Soyadınız" required />
+              </div>
+              <div>
+                <input type="text" class="form-control" placeholder="Telefon Numaranız" required />
+              </div>
+              <div>
+                <input type="email" class="form-control" placeholder="E-postanız" required />
+              </div>
+              <div>
+                <select class="form-control nice-select wide" required>
+                  <option value="" disabled selected>Kaç kişi var?</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </div>
+              <div>
+                <input type="date" class="form-control" required />
+              </div>
+              <div>
+                <textarea class="form-control" placeholder="Mesajınız" rows="4" required></textarea>
+              </div>
+              <div class="btn_box">
+                <button type="submit">Şimdi Rezervasyon Yap</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="map_container">
+            <div class="social-media-container">
+              <a href="https://www.youtube.com/@serhatyardimciemlak" target="_blank">
+                <img src="images/ana/yout.webp" alt="YouTube"
+                  style="width: 29%; height: 30%; border-radius: 30px; margin: 10px;">
+              </a>
+
+
+
+              <a href="https://www.facebook.com/profile.php?id=61564876332903" target="_blank">
+                <img src="images/ana/face.png" alt="Facebook"
+                  style="width: 28%; height: 40%; border-radius: 30px; margin: 10px;">
+                <a href="https://www.instagram.com/adagayrimenkuldidim/" target="_blank">
+                  <img src="images/ana/insta.avif" alt="Instagram"
+                    style="width: 35%; height: 40%; border-radius: 30px; margin: 10px;">
+                </a>
+              </a>
+
+              <a href="https://didimadagayrimenkul.sahibinden.com/" target="_blank">
+                <img src="images/ana/sah.png" alt="YouTube"
+                  style="width: 100%; height: 10%; border-radius: 30px; margin: 10px;">
+              </a>
+
+            </div> <br><br><br><br>
+            <h6 style="font-family: Arial, Helvetica, sans-serif;"> "Hoş geldiniz! Burada, iletişim sayfamızda,
+              istediğiniz tarihte randevu alabilirsiniz veya sosyal medya hesaplarımızı ziyaret ederek bize
+              ulaşabilirsiniz. Her türlü soru ve talebiniz için buradayız. Sizinle iletişimin gerektirdiğinden mutluluk
+              duyarız!"</h6>
+
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <style>
+    .book_section {
+      padding: 60px 0;
+      background-color: #f8f9fa;
+    }
+
+    .heading_container h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2.5rem;
+      color: #333;
+    }
+
+    .form_container {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-control {
+      margin-bottom: 15px;
+      padding: 10px;
+      border: 1px solid #ced4da;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    .btn_box {
+      text-align: center;
+    }
+
+    .btn_box button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .btn_box button:hover {
+      background-color: #0056b3;
+    }
+
+    .map_container {
+      height: 400px;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-top: 20px;
+      padding: 15px;
+      background-color: #fff;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .whatsapp_container {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .whatsapp_container button {
+      background-color: #25D366;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .whatsapp_container button:hover {
+      background-color: #128C7E;
+    }
+
+    .social-media-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+  </style>
+
+  <script>
+    function sendMessage(event) {
+      event.preventDefault(); // Formun varsayılan gönderimini engelle
+
+      // Formdan verileri al
+      const form = event.target;
+      const firstName = form[0].value; // Ad
+      const lastName = form[1].value; // Soyad
+      const phoneNumber = form[2].value; // Telefon
+      const email = form[3].value; // E-posta
+      const numberOfPeople = form[4].value; // Kaç kişi
+      const reservationDate = form[5].value; // Tarih
+      const message = form[6].value; // Mesaj
+
+      // WhatsApp mesajı oluştur
+      const whatsappMessage = `Ad: ${firstName} Soyad: ${lastName} Telefon: ${phoneNumber} E-posta: ${email} Kaç kişi: ${numberOfPeople} Tarih: ${reservationDate} Mesaj: ${message}`;
+      const whatsappNumber = "+905465739123"; // Türk formatında WhatsApp numarası
+      const whatsappUrl = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(whatsappMessage)}`;
+
+      // Kullanıcıyı WhatsApp'a yönlendir
+      window.open(whatsappUrl, '_blank');
+    }
+  </script>
+  <!-- end book section -->
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 footer-col">
+          <div class="footer_contact">
+            <h4>
+              İLETİŞİM
+            </h4>
+            <div class="contact_link_box">
+
+
+              <a href="mailto:email@example.com">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>
+                  eminyardimci82@gmail.com
+                </span>
+              </a>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 footer-col">
+          <div class="footer_detail">
+            <a href="" class="footer-logo">
+              ADRES BİLGİLERİ
+            </a>
+            <p>
+              DİDİM /YENİ MAH. ŞEHİT RIDVAN ÇAKIR CAD. NO:1 KAT:2 D:9 (AKBANK ÜSTÜ)
+            </p>
+
+          </div>
+        </div>
+        <div class="col-md-4 footer-col">
+          <h4>
+            OFİS ÇALIŞMA SAATLERİ
+          </h4>
+          <p>
+            her gün
+          </p>
+          <p>
+            08.00 - 19.00
+          </p>
+        </div>
+      </div>
+      <div class="footer-info">
+        <p>
+          &copy; <span id="displayYear"></span> Tüm hakları saklıdır. İzinsiz kullanılması, kopyalanması veya
+          paylaşılması kesinlikle yasaktır. Yazılı onay alınmadan hiçbir şekilde çoğaltılamaz.
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+
+
+  <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+  <!-- owl slider -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- isotope js -->
+  <script src="https://unpkg.com/isotope-layout@3.0.4/dist/isotope.pkgd.min.js"></script>
+  <!-- nice select -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script>
+  <!-- End Google Map -->
+
+</body>
+
+</html>
