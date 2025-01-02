@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function () {
     // Elemanlar
     const moreDetailsButtons = document.querySelectorAll('.btn-details');
@@ -127,6 +128,9 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 });
+
+
+
 
 
 
