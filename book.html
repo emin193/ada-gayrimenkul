@@ -32,6 +32,8 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+  <link rel="stylesheet" href="emin.css">
+
 
 </head>
 
@@ -39,7 +41,7 @@
 
   <div class="hero_area">
     <div class="bg-box">
-      <img src="images/hero_bg.jpg" alt="">
+      <img src="images/hero_bg.webp" alt="">
     </div>
 
 
@@ -201,113 +203,9 @@
 
   </section>
 
-  <style>
-    .book_section {
-      padding: 60px 0;
-      background-color: #f8f9fa;
-    }
+  
 
-    .heading_container h2 {
-      text-align: center;
-      margin-bottom: 30px;
-      font-size: 2.5rem;
-      color: #333;
-    }
-
-    .form_container {
-      background-color: #fff;
-      padding: 30px;
-      border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .form-control {
-      margin-bottom: 15px;
-      padding: 10px;
-      border: 1px solid #ced4da;
-      border-radius: 5px;
-      font-size: 1rem;
-    }
-
-    .btn_box {
-      text-align: center;
-    }
-
-    .btn_box button {
-      background-color: #007bff;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 5px;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-
-    .btn_box button:hover {
-      background-color: #0056b3;
-    }
-
-    .map_container {
-      height: 400px;
-      border-radius: 8px;
-      overflow: hidden;
-      margin-top: 20px;
-      padding: 15px;
-      background-color: #fff;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .whatsapp_container {
-      margin-top: 20px;
-      text-align: center;
-    }
-
-    .whatsapp_container button {
-      background-color: #25D366;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 5px;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-
-    .whatsapp_container button:hover {
-      background-color: #128C7E;
-    }
-
-    .social-media-container {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-    }
-  </style>
-
-  <script>
-    function sendMessage(event) {
-      event.preventDefault(); // Formun varsayılan gönderimini engelle
-
-      // Formdan verileri al
-      const form = event.target;
-      const firstName = form[0].value; // Ad
-      const lastName = form[1].value; // Soyad
-      const phoneNumber = form[2].value; // Telefon
-      const email = form[3].value; // E-posta
-      const numberOfPeople = form[4].value; // Kaç kişi
-      const reservationDate = form[5].value; // Tarih
-      const message = form[6].value; // Mesaj
-
-      // WhatsApp mesajı oluştur
-      const whatsappMessage = `Ad: ${firstName} Soyad: ${lastName} Telefon: ${phoneNumber} E-posta: ${email} Kaç kişi: ${numberOfPeople} Tarih: ${reservationDate} Mesaj: ${message}`;
-      const whatsappNumber = "+905465739123"; // Türk formatında WhatsApp numarası
-      const whatsappUrl = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(whatsappMessage)}`;
-
-      // Kullanıcıyı WhatsApp'a yönlendir
-      window.open(whatsappUrl, '_blank');
-    }
-  </script>
+  
   <!-- end book section -->
 
   <!-- footer section -->
@@ -389,6 +287,9 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
   </script>
   <!-- End Google Map -->
+
+  <script src="scripttt.js"></script>
+
 
 </body>
 

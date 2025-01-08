@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function () {
     // Elemanlar
     const moreDetailsButtons = document.querySelectorAll('.btn-details');
@@ -130,3 +131,28 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+
+
+
+
+function sendMessage(event) {
+    event.preventDefault(); // Formun varsayılan gönderimini engelle
+
+    // Formdan verileri al
+    const form = event.target;
+    const firstName = form[0].value; // Ad
+    const lastName = form[1].value; // Soyad
+    const phoneNumber = form[2].value; // Telefon
+    const email = form[3].value; // E-posta
+    const numberOfPeople = form[4].value; // Kaç kişi
+    const reservationDate = form[5].value; // Tarih
+    const message = form[6].value; // Mesaj
+
+    // WhatsApp mesajı oluştur
+    const whatsappMessage = `Ad: ${firstName} Soyad: ${lastName} Telefon: ${phoneNumber} E-posta: ${email} Kaç kişi: ${numberOfPeople} Tarih: ${reservationDate} Mesaj: ${message}`;
+    const whatsappNumber = "+905465739123"; // Türk formatında WhatsApp numarası
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(whatsappMessage)}`;
+
+    // Kullanıcıyı WhatsApp'a yönlendir
+    window.open(whatsappUrl, '_blank');
+  }
